@@ -68,6 +68,16 @@ margin: 12px;
     margin: 12px;
     
 }
+.upload{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.upload-profile{
+    margin:8px;
+}
 .status{
     display:flex;
     flex-direction: row;
