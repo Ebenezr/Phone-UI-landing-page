@@ -5,21 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>                                         
     <title>Profile</title>
 </head>
 <body>
     <div class="container">
+        <header>
+            <nav>
+                <i style="font-size:48px" class="fa fa-chevron-circle-left back"></i>
+                <h3></i>Profile</h3>
+                <i style="font-size:48px" class='fa fa-gear settings'></i>
+                <div class="dipsplay-pic"></div>
+
+            </nav>   
+        </header>
+        
         <div class="container-box">
-            <header>
-                <button id="back"><</button>
-                <h3>Profile</h3>
-                <button id="settings">O</button>
-                <img src="#" alt="Profile">
-            </header>
+           
             <div class="inner-container">
             <div class="upload">
-                <img src="#" alt="Cameta">
-                <img src="#" alt="Gallery">
+                <i class="fas fa-camera" aria-hidden="true"></i>
+                <i class="fa fa-picture-o" aria-hidden="true"></i>
+
             </div>
             <div class="status">
                 <div class="tasks"><h3>Open Tasks</h3><div class="status-number"><h3>5</h3></div></div>
@@ -36,7 +43,7 @@
                 <label for="password">Password</label>
                 <input type="password" id="password" class="field" placeholder="" required >
                 <div class="btn-all">
-                <button type="submit" class="btn">Save</button>
+                <button type="submit">Save</button>
                 <button type="reset">Discard</button>
                 </div>
                 
