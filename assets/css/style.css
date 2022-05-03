@@ -1,20 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Nunito:wght@200&family=Quicksand:wght@300;500&display=swap');
+
  body{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Nunito', sans-serif;
  }
+ /*screen size*/
 .container{
     width:720px;
     height:1080px;
-    margin: 0;
+    background-color: black;
+    margin: 0 auto;
+    color:white;
 
 }
 .container-box{
     margin:0 auto;
     padding:22px;
+    margin-left: 30px;
+    margin-right: 30px;
+
 
 
 }
 .inner-container{
     padding:12px;
     margin: 0;
+}
+.status{
+    display:flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    width:100%;
+    padding:0px;
+    
+    
+}
+.tasks{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-right:30px ;
+    margin-left: 30px;
+    width:150px;
+    height:150px;
+    position: relative;
+}
+.tasks {
+   
+    text-align: center;
+    color:white;
+    margin-bottom: 18px;
+    font-weight:lighter;
+    font-size:0.9rem;
+
+}
+/*task circles*/
+.status-number{
+    position: absolute;
+    bottom:0;
+    margin-top: 12px;
+    border-radius: 50%;
+    border: 2px purple solid;
+    width:100px;
+    height: 100px;
+   
+    /*alighn text center*/
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+hr{
+    color: grey;
+    margin-top: 20px;
+    
+}
+.field{
+    padding:3px 20px;
+    width: 100%;
+    outline:none;
+    border: none;
+    border-bottom: grey 1px solid ;
 }
