@@ -5,8 +5,8 @@
  }
  /*screen size*/
 .container{
-    width:720px;
-    height:1080px;
+    width:428px;
+    height:926px;
     background-color: black;
     margin: 0 auto;
     color:white;
@@ -15,9 +15,9 @@
 }
 .container-box{
     margin:0 auto;
-    padding:22px;
-    margin-left: 30px;
-    margin-right: 30px;
+    padding:16px;
+    margin-left: 15px;
+    margin-right: 15px;
 
 
 
@@ -41,8 +41,19 @@ header{
     position: relative;
     display:flex;
     justify-content: center;
-
+    position: relative;
  
+}
+.profile-picture{
+    width: 95px;
+    height:95px ;
+    border-radius: 50%;
+    position: absolute;
+    top:60%;
+    border: 1px solid rgba(255, 255, 255, 0.568);
+    background-color: rgba(240, 248, 255, 0);
+    background-image: url(/assets/images/three.jpg);
+    background-size:contain;
 }
 nav{
     position:absolute;
@@ -78,6 +89,17 @@ margin: 12px;
 .upload-profile{
     margin:8px;
 }
+.upload button{
+    background-color: rgba(240, 248, 255, 0);
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 30px;
+    height: 30px;
+}
+button:hover {
+transform: scale(1.2);
+background-color: rgba(255, 255, 255, 0) !important;
+}
 .status{
     display:flex;
     flex-direction: row;
@@ -85,50 +107,63 @@ margin: 12px;
     justify-content: center;
     width:100%;
     padding:0px;
-    
-    
+    margin-bottom:0;
 }
 .tasks{
     display:flex;
     flex-direction: row;
     text-align: center;
     justify-content: center;
-    margin-right:30px ;
-    margin-left: 30px;
-    width:150px;
-    height:150px;
+    margin-right:6px;
+    margin-left: 6px;
+    width:300px;
+    height:85px;
     position: relative;
-}
-.tasks {
-   
     text-align: center;
     color:white;
-    margin-bottom: 18px;
-    font-weight:lighter;
-    font-size:0.9rem;
-
+    margin-bottom: 12px;   
 }
+.tasks h3{
+    margin-top: 0;
+    font-weight:lighter;
+    font-size:10px;
+    text-align: center;
+}
+
 /*task circles*/
 .status-number{
     position: absolute;
     bottom:0;
-    margin-top: 12px;
+    margin-top: 0;
     border-radius: 50%;
     border: 2px purple solid;
-    width:100px;
-    height: 100px;
-   
+    width:60px;
+    height: 60px;   
     /*alighn text center*/
+    text-align: center;
 
-    display:flex;
+  
+    
+    /*
     justify-content: center;
     align-items: center;
-    
+    */
 
 }
+/*alighn text center*/
+.status-number h3{
+    position: relative;
+    top: 50%;
+
+    transform: translateY(-50%);
+    font-weight: 600;
+    font-size: 12px;
+}
 hr{
-    color: grey;
-    margin-top: 20px;
+    
+    margin-top: 0;
+    border: none;
+    border-bottom: solid rgba(196, 195, 195, 0.616) 1px;
     
 }
 .field{
@@ -193,8 +228,8 @@ hr{
     font-weight: 200;
  }
 img{
-    width: 150px;
-    height: 150px;
+    width: 90px;
+    height: 80px;
     border-radius: 50%;
     margin-bottom: 0;
 }

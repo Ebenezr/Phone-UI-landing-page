@@ -1,117 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Profile</title>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <nav>
-          <i style="font-size: 48px" class="fa fa-chevron-circle-left back"></i>
-          <h3>
-            <i style="font-size: 24px" class="fas fa-user-alt profile"></i>
-            Profile
-          </h3>
-          <i style="font-size: 48px" class="fa fa-gear settings"></i>
-          <div class="dipsplay-pic"></div>
-        </nav>
-      </header>
 
-      <div class="container-box">
-        <div class="inner-container">
-          <div class="upload">
-            <i class="fas fa-camera upload-profile" aria-hidden="true"></i>
-            <i class="fa fa-picture-o upload-profile" aria-hidden="true"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>Profile</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <i style="font-size: 48px" class="fa fa-chevron-circle-left back"></i>
+        <h3>
+          <i style="font-size: 24px" class="fas fa-user-alt profile"></i>
+          Profile
+        </h3>
+        <i style="font-size: 48px" class="fa fa-gear settings"></i>
+        <div class="dipsplay-pic"></div>
+      </nav>
+      <div class="profile-picture"></div>
+    </header>
+
+    <div class="container-box">
+      <div class="inner-container">
+        <div class="upload">
+          <button><i class="fa fa-camera"></i></button>
+          <button><i class="fa fa-image"></i></button>
+
+        </div>
+        <div class="status">
+          <div class="tasks">
+            <h3>Open Tasks</h3>
+            <div class="status-number">
+              <h3>5</h3>
+            </div>
           </div>
-          <div class="status">
-            <div class="tasks">
-              <h3>Open Tasks</h3>
-              <div class="status-number"><h3>5</h3></div>
-            </div>
-            <div class="tasks">
-              <h3>Ongoing Tasks</h3>
-              <div class="status-number"><h3>9</h3></div>
-            </div>
-            <div class="tasks">
-              <h3>Closed Tasks</h3>
-              <div class="status-number"><h3>30</h3></div>
+          <div class="tasks">
+            <h3>Ongoing Tasks</h3>
+            <div class="status-number">
+              <h3>9</h3>
             </div>
           </div>
-          <hr />
-          <form action="#">
-            <caption>
-              Profile Infomation
-            </caption>
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              class="field"
-              placeholder="Ebbe"
-              required
-            />
-            <label for="email">E-mail</label>
-            <input
-              type="email"
-              id="email"
-              class="field"
-              placeholder="name@mail.com"
-              required
-            />
-            <label for="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              class="field"
-              placeholder=""
-              required
-            />
-            <div class="btn-all">
-              <button type="submit">Save</button>
-              <button type="reset">Discard</button>
-            </div>
-          </form>
-          <hr />
-          <div class="teams">
-            <caption>
-              Team Members
-            </caption>
-            <div class="team-parent">
-              <div class="member-card">
-                <img src="/assets/images/one.jpg" alt="Daisy" />
-                <h3>Daicy</h3>
-              </div>
-              <div class="member-card">
-                <img src="/assets/images/two.jpg" alt="Elvis" />
-                <h3>Elvis</h3>
-              </div>
-              <div class="member-card">
-                <img src="/assets/images/three.jpg" alt="Ebbe" />
-                <h3>Ebbe</h3>
-              </div>
+          <div class="tasks">
+            <h3>Closed Tasks</h3>
+            <div class="status-number">
+              <h3>30</h3>
             </div>
           </div>
         </div>
-        <footer>
-          <div id="slogan">
-            <span>Guest</span>
-            <h2>CONSISTANCY</h2>
+        <hr />
+        <form action="#">
+          <caption>
+            Profile Infomation
+          </caption>
+          <label for="name">Name</label>
+          <input type="text" id="name" class="field" placeholder="Ebbe" required />
+          <label for="email">E-mail</label>
+          <input type="email" id="email" class="field" placeholder="name@mail.com" required />
+          <label for="password">Password</label>
+          <input type="password" id="password" class="field" placeholder="***********" required />
+          <div class="btn-all">
+            <button type="submit">Save</button>
+            <button type="reset">Discard</button>
           </div>
-          <button>Logout</button>
-        </footer>
+        </form>
+        <hr />
+        <div class="teams">
+          <caption>
+            Team Members
+          </caption>
+          <div class="team-parent">
+            <div class="member-card">
+              <img src="/assets/images/one.jpg" alt="Daisy" />
+              <h3>Daicy</h3>
+            </div>
+            <div class="member-card">
+              <img src="/assets/images/two.jpg" alt="Elvis" />
+              <h3>Elvis</h3>
+            </div>
+            <div class="member-card">
+              <img src="/assets/images/three.jpg" alt="Ebbe" />
+              <h3>Ebbe</h3>
+            </div>
+          </div>
+        </div>
       </div>
+      <footer>
+        <div id="slogan">
+          <span>Guest</span>
+          <h2>CONSISTANCY</h2>
+        </div>
+        <button>Logout</button>
+      </footer>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
